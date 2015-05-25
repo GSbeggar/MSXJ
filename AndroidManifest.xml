@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
+    package="com.kaixin.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="美食新计"
+        android:name="com.msxj.android.MSXJApplication"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.msxj.android.activity.StartActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.msxj.android.activity.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.RegisterActivity">
+          </activity>
+        <activity
+            android:name="com.msxj.android.activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ChangeWallpagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.EditSignatureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoAvatarDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoPictureDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoCommentDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoReplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.DiaryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.DiaryDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.WriteDiaryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.FriendsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.VisitorsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.FriendInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ChatLogsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.SendGiftActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.SelectGiftActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.SelectFriendsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.VoiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.DeletePhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhoneAlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.AlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ImageFilterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ImageFilterCropActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ImageFilterEffectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ImageFilterFrameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ImageFilterFaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.PhotoShareActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.WriteRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.CheckInActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.msxj.android.activity.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.SetUpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ExportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.UploadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.FeedBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.SettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.CreatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.activity.ShakeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.msxj.android.picchoose.TestPicActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            </activity>
+            <activity
+            android:name="com.msxj.android.picchoose.ImageGridActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.picchoose.PublishedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.msxj.android.picchoose.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

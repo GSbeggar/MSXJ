@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_bartype">
+        <item>美食吧</item>
+        <item>活动吧</item>
+    </string-array>
+</resources>

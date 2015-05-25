@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/kaixin_background"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/global_top_background" >
+
+            <com.msxj.android.circleimageview.CircleImageView
+                android:id="@+id/home_menu"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="4dip"
+                 android:src="@drawable/head_default" />
+
+            <LinearLayout
+                android:id="@+id/home_top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:background="@drawable/title_bar_center_button_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/home_top_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="热门动态"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/title_bar_arrow_down_bg" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/home_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/title_refresh_button" />
+        </LinearLayout>
+         
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+                
+            
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <GridView
+                android:id="@+id/home_display"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:horizontalSpacing="0dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="2" />
+
+            <com.msxj.android.dodowaterfall.LazyScrollView
+                android:id="@+id/home_waterfall_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/home_waterfall_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </com.msxj.android.dodowaterfall.LazyScrollView>
+        </LinearLayout>
+           
+             <LinearLayout   
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottombg"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:paddingLeft="0dip"
+            android:paddingRight="0dip"
+            android:layout_alignParentBottom="true"
+              >
+
+            <Button
+                android:id="@+id/home_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="0dip"
+                android:layout_marginTop="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_leftred"
+                android:gravity="center"
+                android:text="热门"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+
+            <Button
+                android:id="@+id/home_guess"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="0dip"
+                android:layout_marginTop="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_white"
+                android:text="猜你喜欢"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+
+            <Button
+                android:id="@+id/home_newest"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="0dip"
+                android:layout_marginTop="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_white"
+                android:text="最新"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+
+            <Button
+                android:id="@+id/home_hotso"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="0dip"
+                android:layout_marginTop="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_rightwhite"
+                android:text="热搜"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+        </LinearLayout>
+      
+              
+              </FrameLayout>
+           
+              
+             
+             
+              
+        
+    
+  
+</LinearLayout>
+ 
+ </LinearLayout>
+                   
